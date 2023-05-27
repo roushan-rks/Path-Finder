@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>busnumber</title>
+  <style>
+    #back-g{
+    background-color: black;
+
+
+}
+p{
+    color: white;
+}
+  </style>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+<link rel="stylesheet" href="./admin.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+</head>
+<body id="back-g">
+
+
+
+
+<table class="table align-middle mb-0 ">
+    <thead class="bg-light">
+      <tr>
+        <th>S.No.</th>
+        <th>Bus Stop</th>
+        <th>Bus Alloted</th>
+        <th>Bus number</th>
+
+        <th>Position</th>
+        <th>Actions</th>
+        <th> <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <form action="/update" method="post">
+        <td>
+          <div class="d-flex align-items-center">
+
+            <div class="ms-3">
+             
+            <p>1.</p>
+            </div>
+          </div>
+        </td>
+        <td>
+           <p>Patel Nagar</p>
+        </td>
+        <td>
+                 <p><%=patel%></p>
+        </td>
+        <td>
+           <input type="text" name="newnumber">
+        </td>
+        <input type="text" name="place" id="" value="Patel Nagar" hidden="hidden">
+         
+        <td>  <button type="submit" class="btn btn-link btn-sm btn-rounded" >
+            Update
+          </button></td>
+         </form>
+         <td>
+          <form action="/message" method="post">
+          <input type="text" name="place" id="" value="Patel Nagar" hidden="hidden">
+             <button type="submit" class="btn btn-link btn-sm btn-rounded">
+                 Send Msg
+                </button>
+              </form>
+            </td>
+        </tr>
+        <tr>
+          <form action="/update" method="post">
+        <td>
+          <div class="d-flex align-items-center">
+
+            <div class="ms-3">
+            <p>2.</p>
+            </div>
+          </div>
+        </td>
+        <td>
+           <p>Anand Nagar</p>
+        </td>
+        <td>
+            <p><%=anand%></p>
+        </td>
+        <td>
+           <input type="text" name="newnumber">
+        </td>
+        <input type="text" name="place" id="" value="Anand Nagar" hidden="hidden">
+        <td>  <button type="submit" class="btn btn-link btn-sm btn-rounded" >
+            Update
+          </button></td>
+        </form>
+        <td>
+          <form action="/message" method="post">
+          <input type="text" name="place" id="" value="Anand Nagar" hidden="hidden">
+          <button type="submit" class="btn btn-link btn-sm btn-rounded">
+            Send Msg
+          </button>
+        </form>
+        </td>
+      </tr>
+      <tr>
+          <form action="/update" method="post">
+        <td>
+          <div class="d-flex align-items-center">
+
+            <div class="ms-3">
+            <p>3.</p>
+            </div>
+          </div>
+        </td>
+        <td>
+           <p>TanaTan Dhabha</p>
+        </td>
+        <td>
+            <p><%=tana%></p>
+        </td>
+        <td>
+           <input type="text" name="newnumber">
+        </td>
+        <input type="text" name="place" id="" value="TanaTan Dhabha" hidden="hidden">
+        <td>  <button type="submit" class="btn btn-link btn-sm btn-rounded">
+            Update
+          </button></td>
+        </form>
+        <td>
+          <form action="/message" method="post">
+          <input type="text" name="place" id="" value="TanaTan Dhabha" hidden="hidden">
+          <button type="submit" class="btn btn-link btn-sm btn-rounded">
+            Send Msg
+          </button>
+        </form>
+        </td>
+      </tr>
+      <tr>
+          <form action="/update" method="post">
+        <td>
+          <div class="d-flex align-items-center">
+
+            <div class="ms-3">
+            <p>4.</p>
+            </div>
+          </div>
+        </td>
+        <td>
+           <p>Indrapuri</p>
+        </td>
+        <td>
+            <p><%=indra%></p>
+        </td>
+        <td>
+           <input type="text" name="newnumber">
+        </td>
+        <input type="text" name="place" id="" value="Indrapuri" hidden="hidden">
+        <td>  <button type="submit" class="btn btn-link btn-sm btn-rounded">
+            Update
+          </button></td>
+        </form>
+        <td>
+          <form action="/message" method="post">
+          <input type="text" name="place" id="" value="Indrapuri" hidden="hidden">
+          <button type="submit" class="btn btn-link btn-sm btn-rounded">
+            Send Msg
+          </button>
+        </form>
+        </td>
+      </tr>
+      <tr>
+          <form action="/update" method="post">
+        <td>
+          <div class="d-flex align-items-center">
+
+            <div class="ms-3">
+            <p>5.</p>
+            </div>
+          </div>
+        </td>
+        <td>
+           <p>M.P Nagar</p>
+        </td>
+        <td>
+            <p><%=mp%></p>
+        </td>
+        <td>
+           <input type="text" name="newnumber">
+        </td>
+        <input type="text" name="place" id="" value="M.P Nagar" hidden="hidden">
+        <td>  <button type="submit" class="btn btn-link btn-sm btn-rounded">
+            Update
+          </button></td>
+        </form>
+        <td>
+          <form action="/message" method="post">
+
+            <input type="text" name="place" id="" value="M.P Nagar" hidden="hidden">
+            <button type="submit" class="btn btn-link btn-sm btn-rounded">
+              Send Msg
+            </button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+          <form action="/update" method="post">
+        <td>
+          <div class="d-flex align-items-center">
+
+            <div class="ms-3">
+            <p>6.</p>
+            </div>
+          </div>
+        </td>
+        <td>
+           <p>Narela</p>
+        </td>
+        <td>
+            <p><%=nar%></p>
+        </td>
+        <td>
+           <input type="text" name="newnumber">
+        </td>
+        <input type="text" name="place" id="" value="Narela" hidden="hidden">
+        <td>  <button type="submit" class="btn btn-link btn-sm btn-rounded">
+            Update
+          </button></td>
+        </form>
+        <td>
+          <form action="/message" method="post">
+
+            <input type="text" name="place" id="" value="Narela" hidden="hidden">
+            <button type="submit" class="btn btn-link btn-sm btn-rounded">
+              Send Msg
+            </button>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </body>
